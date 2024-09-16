@@ -1,11 +1,12 @@
 apiVersion: v1
 kind: Service
-metadata: 
-  name: react-app
+metadata:
+  name: service-2048
 spec:
   ports:
-  - port: 3000
-    protocol: TCP
-  type: ClusterIP
+    - port: 80
+      targetPort: 80
+      protocol: TCP
+  type: NodePort
   selector:
-    role: react-app
+    app.kubernetes.io/name: app-2048
