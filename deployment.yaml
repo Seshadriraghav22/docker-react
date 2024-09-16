@@ -18,4 +18,4 @@ spec:
       - name: react-app
         image: seshadriraghav22/react:latest
         ports:
-        - containerPort: 3000
+        - containerPort: 80
